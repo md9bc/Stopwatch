@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B4DF524B1F6B545E00AB247C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF524A1F6B545E00AB247C /* AppDelegate.swift */; };
-		B4DF524D1F6B545E00AB247C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF524C1F6B545E00AB247C /* ViewController.swift */; };
+		B4DF524D1F6B545E00AB247C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF524C1F6B545E00AB247C /* HomeViewController.swift */; };
 		B4DF52501F6B545E00AB247C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DF524E1F6B545E00AB247C /* Main.storyboard */; };
 		B4DF52521F6B545E00AB247C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DF52511F6B545E00AB247C /* Assets.xcassets */; };
 		B4DF52551F6B545E00AB247C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DF52531F6B545E00AB247C /* LaunchScreen.storyboard */; };
 		B4DF52601F6B545E00AB247C /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF525F1F6B545E00AB247C /* StopwatchTests.swift */; };
 		B4DF526B1F6B545E00AB247C /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF526A1F6B545E00AB247C /* StopwatchUITests.swift */; };
+		B4DF52791F6B622400AB247C /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF52781F6B622400AB247C /* Stopwatch.swift */; };
+		B4DF527B1F6B63D600AB247C /* AddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF527A1F6B63D600AB247C /* AddTimeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B4DF52471F6B545E00AB247C /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DF524A1F6B545E00AB247C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4DF524C1F6B545E00AB247C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4DF524C1F6B545E00AB247C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4DF524F1F6B545E00AB247C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4DF52511F6B545E00AB247C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4DF52541F6B545E00AB247C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		B4DF52661F6B545E00AB247C /* StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DF526A1F6B545E00AB247C /* StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITests.swift; sourceTree = "<group>"; };
 		B4DF526C1F6B545E00AB247C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4DF52781F6B622400AB247C /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		B4DF527A1F6B63D600AB247C /* AddTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTimeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				B4DF524A1F6B545E00AB247C /* AppDelegate.swift */,
-				B4DF524C1F6B545E00AB247C /* ViewController.swift */,
+				B4DF524C1F6B545E00AB247C /* HomeViewController.swift */,
 				B4DF524E1F6B545E00AB247C /* Main.storyboard */,
 				B4DF52511F6B545E00AB247C /* Assets.xcassets */,
 				B4DF52531F6B545E00AB247C /* LaunchScreen.storyboard */,
 				B4DF52561F6B545E00AB247C /* Info.plist */,
+				B4DF52781F6B622400AB247C /* Stopwatch.swift */,
+				B4DF527A1F6B63D600AB247C /* AddTimeViewController.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4DF524D1F6B545E00AB247C /* ViewController.swift in Sources */,
+				B4DF524D1F6B545E00AB247C /* HomeViewController.swift in Sources */,
+				B4DF527B1F6B63D600AB247C /* AddTimeViewController.swift in Sources */,
+				B4DF52791F6B622400AB247C /* Stopwatch.swift in Sources */,
 				B4DF524B1F6B545E00AB247C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = md9bc.Stopwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.virginia.cs.cs4720.Note-Taker.md9bc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -426,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = md9bc.Stopwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.virginia.cs.cs4720.Note-Taker.md9bc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
